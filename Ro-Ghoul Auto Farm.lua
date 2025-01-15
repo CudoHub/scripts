@@ -22,22 +22,23 @@ local oldtick, farmtick = 0, 0
 local camera = workspace.CurrentCamera
 local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/z4gs/scripts/master/Settings.lua"))()("Ro-Ghoul Autofarm", {
     Skills = {
-        E = false,
-        F = false,
+        E = true,
+        F = true,
         C = false,
-        R = false
+        R = true
     },
     Boss = {
-        ["Gyakusatsu"] = false,
-        ["Eto Yoshimura"] = false,
-        ["Koutarou Amon"] = false,
-        ["Nishiki Nishio"] = false
+        ["Gyakusatsu"] = true,
+        ["Eto Yoshimura"] = true,
+        ["Koutarou Amon"] = true,
+        ["Nishiki Nishio"] = true,
+        ["Touka Kirishima"] = true
     },
     DistanceFromNpc = 5,
-    DistanceFromBoss = 8,
-    TeleportSpeed = 150,
-    ReputationFarm = false,
-    ReputationCashout = false,
+    DistanceFromBoss = 0,
+    TeleportSpeed = 333,
+    ReputationFarm = true,
+    ReputationCashout = true,
     AutoKickWhitelist = ""
 })
 
@@ -46,7 +47,8 @@ local array = {
         ["Gyakusatsu"] = 1250,
         ["Eto Yoshimura"] = 1250,
         ["Koutarou Amon"] = 750,
-        ["Nishiki Nishio"] = 250
+        ["Nishiki Nishio"] = 250,
+        ["Touka Kirishima"] = 250
     },
 
     npcs = {["Aogiri Members"] = "GhoulSpawns", Investigators = "CCGSpawns", Humans = "HumanSpawns"},
