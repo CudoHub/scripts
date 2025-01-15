@@ -1,7 +1,7 @@
 local gui = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/z4gs/scripts/master/testtttt.lua"))():AddWindow("Ro-Ghoul", {
     main_color = Color3.fromRGB(0,0,0),
     min_size = Vector2.new(373, 340),
-    can_resize = false
+    can_resize = true
 })
 
 local get = setmetatable({}, {
